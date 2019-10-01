@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abu_abu_muda"
+    tools:context=".MenuUtama">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/button_overview_ftth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:background="@drawable/bg_button_select"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/undraw_master"/>
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center"
+                        android:text="@string/overview_jaringan_ftth"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_segment_feeder"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:background="@drawable/bg_button_select"
+                    tools:ignore="MissingConstraints"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/undraw_best"/>
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center"
+                        android:text="@string/segment_feeder"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_segment_distribusi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:background="@drawable/bg_button_select"
+                    tools:ignore="MissingConstraints"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/undraw_inbox"/>
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center"
+                        android:text="@string/segment_distribusi"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_segment_drop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:background="@drawable/bg_button_select"
+                    tools:ignore="MissingConstraints"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/undraw_Ordinary"/>
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center"
+                        android:text="@string/segment_drop"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_sim_power_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:background="@drawable/bg_button_select"
+                    tools:ignore="MissingConstraints"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/undraw_segment_analysis"/>
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center"
+                        android:text="@string/simulasi_powerlink_budget"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/merah"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

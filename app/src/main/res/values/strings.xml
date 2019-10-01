@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Spesifikasi Teknis</string>
+    <string name="nama_app2">Teknis</string>
+    <string name="title_activity_menu_utama">MenuUtama</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_beranda">Beranda</string>
+    <string name="menu_ftth">Overview Jaringan FTTH</string>
+    <string name="menu_feeder">Segment Feeder</string>
+    <string name="menu_distribusi">Segment Distribusi</string>
+    <string name="menu_drop">Segment Drop</string>
+    <string name="menu_simulasi">Simulasi Powerlink Budget</string>
+
+    <string name="menu_about">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="website_telkom">www.telkom.co.id</string>
+    <string name="telkom_indonesia">Telkom Indonesia</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="menu_share">Share</string>
+    <string name="simulasi_powerlink_budget">Simulasi Powerlink Budget</string>
+    <string name="segment_drop">Segment Drop</string>
+    <string name="segment_distribusi">Segment Distribusi</string>
+    <string name="segment_feeder">Segment Feeder</string>
+    <string name="overview_jaringan_ftth">Overview Jaringan FTTH</string>
+</resources>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abu_abu_muda"
+    tools:context=".SimulasiPowerLink">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Tx"
+                    android:textColor="@color/hitam"
+                    android:textSize="@dimen/_15ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/bg_simulasi_powerlink">
+
+                <EditText
+                    android:id="@+id/et_tx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/edittext_border"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/_5sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Panjang Kabel"
+                    android:textColor="@color/hitam"
+                    android:textSize="@dimen/_15ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_pjngkabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/bg_simulasi_powerlink"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lin_layout_pk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_pk"
+                        android:layout_width="@dimen/_130sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_5sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:text="X"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:id="@+id/txt_def_pk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:text="0.35"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_hsl_pk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_below="@+id/lin_layout_pk"
+                    android:background="@drawable/edittext_border"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:textColorHint="@color/abu_abu"
+                    tools:ignore="UnknownId" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Jumlah Sambungan"
+                    android:textColor="@color/hitam"
+                    android:textSize="@dimen/_15ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_jmlsambungan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/bg_simulasi_powerlink"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lin_layout_js"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_js"
+                        android:layout_width="@dimen/_130sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_5sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:text="X"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:id="@+id/txt_def_js"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:text="0.1"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_hsl_js"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_below="@+id/lin_layout_js"
+                    android:background="@drawable/edittext_border"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:textColorHint="@color/abu_abu"
+                    tools:ignore="UnknownId" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Jumlah Konektor"
+                    android:textColor="@color/hitam"
+                    android:textSize="@dimen/_15ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_jmkonektor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/bg_simulasi_powerlink"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lin_layout_jk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_jk"
+                        android:layout_width="@dimen/_130sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_5sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:text="X"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:id="@+id/txt_def_jk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_regular"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:text="0.35"
+                        android:textColor="@color/putih"
+                        android:textSize="@dimen/_15ssp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_hsl_jk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_below="@+id/lin_layout_jk"
+                    android:background="@drawable/edittext_border"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:textColorHint="@color/abu_abu"
+                    tools:ignore="UnknownId" />
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/button_hitungrx"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_button_select"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Hitung RX"
+                android:textColor="@color/putih"
+                android:textSize="@dimen/_15ssp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_rx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/bg_simulasi_powerlink">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_rumus_rx"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_hsl_rx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/edittext_border"
+                        android:focusable="false"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:textColorHint="@color/abu_abu"
+                        tools:ignore="UnknownId" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_rumus_rx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Rx = tx - (redaman)"
+                    android:textColor="@color/putih"
+                    android:textSize="@dimen/_16ssp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/merah"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
